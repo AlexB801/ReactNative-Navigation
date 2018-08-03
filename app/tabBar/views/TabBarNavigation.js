@@ -1,12 +1,18 @@
 'use strict'
-import React from 'react';
-import { addNavigationHelpers } from 'react-navigation';
-import { TabBar } from '../navigationConfiguration';
-import { connect } from 'react-redux';
+
+// React
+import React from 'react'
+
+// Navigation
+import { addNavigationHelpers } from 'react-navigation'
+import { TabBar } from '../navigationConfiguration'
+
+//Redux
+import { connect } from 'react-redux'
 
 const mapStateToProps = (state) => {
-  return {
-    navigationState: state.tabBar,
+ return {
+  navigationState: state.tabBar,
   }
 }
 
@@ -27,4 +33,4 @@ class TabBarNavigation extends React.Component {
   }
 }
 
-export default connect(mapStateToProps)(TabBarNavigation);
+export default connect(mapStateToProps)(TabBarNavigation)
